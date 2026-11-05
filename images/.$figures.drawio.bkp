@@ -1,0 +1,121 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="5tfFGiKKfl5Y4sRfa4fl">
+    <mxGraphModel dx="1746" dy="1263" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-35" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="760" width="590" x="10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-5" edge="1" parent="1" source="N3LU0VSzxgFDgg5P9NpZ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="N3LU0VSzxgFDgg5P9NpZ-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Arial Narrow;" value="&lt;b&gt;Corpus de départ&amp;nbsp;&lt;/b&gt;&lt;div&gt;(Dossier de fich&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;iers PDF)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="80" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-6" edge="1" parent="1" source="N3LU0VSzxgFDgg5P9NpZ-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="N3LU0VSzxgFDgg5P9NpZ-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Arial Narrow;" value="&lt;b&gt;Lister les PDF du dossier&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="80" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-8" edge="1" parent="1" source="N3LU0VSzxgFDgg5P9NpZ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="N3LU0VSzxgFDgg5P9NpZ-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Arial Narrow;" value="&lt;b&gt;Charger bibliography.csv existant&lt;/b&gt;&lt;div&gt;(ensemble des source_file déjà traités)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="80" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-10" edge="1" parent="1" source="N3LU0VSzxgFDgg5P9NpZ-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="N3LU0VSzxgFDgg5P9NpZ-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="50" y="280" />
+              <mxPoint x="50" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-11" connectable="0" parent="N3LU0VSzxgFDgg5P9NpZ-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font face=&quot;Arial Narrow&quot;&gt;Non&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.3581" y="1" as="geometry">
+            <mxPoint x="19" y="-140" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-13" edge="1" parent="1" source="N3LU0VSzxgFDgg5P9NpZ-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="N3LU0VSzxgFDgg5P9NpZ-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-14" connectable="0" parent="N3LU0VSzxgFDgg5P9NpZ-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font face=&quot;Arial Narrow&quot;&gt;Oui&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1476" y="1" as="geometry">
+            <mxPoint x="11" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-7" parent="1" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fontFamily=Arial Narrow;" value="Nouveaux PDF à traiter ?" vertex="1">
+          <mxGeometry height="60" width="220" x="80" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Arial Narrow;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;b&gt;Générer bibliography_unique.csv&lt;/b&gt;&lt;div&gt;(regrouper par depup_key, count)&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="80" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-16" edge="1" parent="1" source="N3LU0VSzxgFDgg5P9NpZ-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="N3LU0VSzxgFDgg5P9NpZ-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Arial Narrow;" value="&lt;b&gt;Pour chaque nouveau PDF, appel à GROBID&lt;/b&gt;&lt;div&gt;POST /api/processReferences&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="80" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-18" edge="1" parent="1" source="N3LU0VSzxgFDgg5P9NpZ-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="N3LU0VSzxgFDgg5P9NpZ-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-19" connectable="0" parent="N3LU0VSzxgFDgg5P9NpZ-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font face=&quot;Arial Narrow&quot;&gt;Oui&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.2438" y="3" as="geometry">
+            <mxPoint x="-9" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-21" edge="1" parent="1" source="N3LU0VSzxgFDgg5P9NpZ-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="N3LU0VSzxgFDgg5P9NpZ-20" value="&lt;font face=&quot;Arial Narrow&quot;&gt;Non&lt;/font&gt;">
+          <mxGeometry relative="1" x="-0.6" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-15" parent="1" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fontFamily=Arial Narrow;" value="&lt;b&gt;Erreur ?&lt;/b&gt;&lt;div&gt;(Réponse HTTP != 200)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="220" x="80" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-30" edge="1" parent="1" source="N3LU0VSzxgFDgg5P9NpZ-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="N3LU0VSzxgFDgg5P9NpZ-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Arial Narrow;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;b&gt;Afficher l&#39;erreur GROBID&lt;/b&gt;&lt;div&gt;PDF non ajouté à&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;bibliography.csv&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="350" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-23" edge="1" parent="1" source="N3LU0VSzxgFDgg5P9NpZ-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="N3LU0VSzxgFDgg5P9NpZ-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Arial Narrow;" value="&lt;b&gt;Parser le TEI XML&lt;/b&gt;&lt;div&gt;(un biblStruct par référence)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="80" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-24" edge="1" parent="1" source="N3LU0VSzxgFDgg5P9NpZ-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="N3LU0VSzxgFDgg5P9NpZ-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="580" />
+              <mxPoint x="60" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-26" edge="1" parent="1" source="N3LU0VSzxgFDgg5P9NpZ-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="N3LU0VSzxgFDgg5P9NpZ-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Arial Narrow;" value="&lt;b&gt;Calculer depup_key&lt;/b&gt;&lt;div&gt;(DOI, sinon titre normalisé + premier auteur)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="80" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-28" edge="1" parent="1" source="N3LU0VSzxgFDgg5P9NpZ-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="N3LU0VSzxgFDgg5P9NpZ-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Arial Narrow;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;b&gt;Générer bibliography.csv&lt;/b&gt;&lt;div&gt;(fusionner anciennes et nouvelles lignes)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="80" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-31" edge="1" parent="1" source="N3LU0VSzxgFDgg5P9NpZ-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="N3LU0VSzxgFDgg5P9NpZ-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Arial Narrow;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;b&gt;Traitement manuel&lt;/b&gt;&lt;div&gt;(PDF sans couche texte &amp;gt; OCR)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="350" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="N3LU0VSzxgFDgg5P9NpZ-34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b style=&quot;font-family: &amp;quot;Arial Narrow&amp;quot;; text-align: left;&quot;&gt;Légende&lt;/b&gt;&lt;div&gt;&lt;div style=&quot;font-family: &amp;quot;Arial Narrow&amp;quot;; text-align: left;&quot;&gt;vert = fichiers produits&lt;/div&gt;&lt;div style=&quot;font-family: &amp;quot;Arial Narrow&amp;quot;; text-align: left;&quot;&gt;rouge = erreur&lt;/div&gt;&lt;div style=&quot;font-family: &amp;quot;Arial Narrow&amp;quot;; text-align: left;&quot;&gt;orange = traitement hors script&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="180" x="420" y="690" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

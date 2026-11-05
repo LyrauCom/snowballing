@@ -1,0 +1,9 @@
+# Données locales
+PDF/
+output/
+
+# Système / IDE
+.DS_Store
+.idea/
+__pycache__/
+*.pyc

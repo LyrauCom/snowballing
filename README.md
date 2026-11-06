@@ -13,7 +13,7 @@ Version 3.3.3 (30/09/2026). Auteure : Aurélie Jeunejean. Licence MIT (voir `LIC
 | Fichier | Rôle |
 |---|---|
 | `extract_bibliography.py` | Le script (Python 3.8 ou plus récent) |
-| `requirements.txt` | Paquets Python nécessaires (pypdf), installés automatiquement par les lanceurs |
+| `requirements.txt` | Paquets Python nécessaires (pypdf), à installer dans `.venv` (voir Installation) |
 | `LICENSE` | Licence MIT |
 | `README.md` | Ce mode d'emploi |
 | `images/` | Schéma de principe (`figure 1.jpg`) et sa source draw.io (`figures.drawio`) |
@@ -21,14 +21,14 @@ Version 3.3.3 (30/09/2026). Auteure : Aurélie Jeunejean. Licence MIT (voir `LIC
 ## Ce qu'il faut avant de commencer
 
 1. **Un serveur GROBID** qui répond. Par défaut, le script utilise `http://localhost:8070` (GROBID installé sur son propre ordinateur, voir la documentation du projet ou https://grobid.readthedocs.io). Un autre serveur s'indique avec `--grobid-url`. Ne pas utiliser la démonstration publique de GROBID : elle est limitée et on y enverrait des articles protégés par le droit d'auteur.
-2. **Python 3.8 ou plus récent et le paquet `pypdf`.** Les lanceurs cherchent Python et proposent de l'installer s'il est absent. Au premier lancement, ils créent un environnement virtuel `.venv` dans le dossier de l'outil et y installent les paquets de `requirements.txt` (connexion internet nécessaire la première fois). Rien n'est installé dans le Python du système. Pour réinstaller les paquets, supprimer le dossier `.venv`.
+2. **Python 3.8 ou plus récent et le paquet `pypdf`.** Vérifier la version avec `python3 --version` (sous Windows : `py --version`) ; si Python est absent, l'installer depuis https://www.python.org. Les paquets de `requirements.txt` s'installent dans un environnement virtuel `.venv` créé dans le dossier de l'outil (voir Installation ; connexion internet nécessaire la première fois). Rien n'est installé dans le Python du système. Pour réinstaller les paquets, supprimer le dossier `.venv` et refaire l'installation.
 3. **Les PDF**, nommés selon la convention ci-dessous.
 4. Facultatif : **les exports Covidence** (Export, bloc References, format CSV) des études incluses et des études écartées.
 
 ## Installation
 
 1. Télécharger le zip et le décompresser.
-   - Sous **Windows**, avant de décompresser : clic droit sur le zip, Propriétés, cocher « Débloquer », OK. Puis clic droit, « Extraire tout ». Ne jamais lancer le `.bat` depuis l'intérieur du zip.
+   - Sous **Windows** : clic droit sur le zip, « Extraire tout ». Ne pas lancer le script depuis l'intérieur du zip.
 2. Placer le contenu dans le dossier de travail de la SLR, à côté d'un dossier `PDF` :
 
 ```
@@ -83,7 +83,7 @@ Relire ensuite les accents, les années et les DOI avant d'enregistrer le fichie
 
 ## Utilisation
 
-Double-cliquer sur le lanceur, ou en ligne de commande depuis le dossier de travail :
+En ligne de commande, depuis le dossier de travail, avec le Python de `.venv` (`.venv/bin/python`, ou `.venv\Scripts\python.exe` sous Windows ; `python3` ci-dessous par souci de lisibilité) :
 
 ```
 python3 extract_bibliography.py
@@ -145,21 +145,21 @@ Les éléments propres à une revue se trouvent en tête du script, dans des blo
 | Message | Cause et solution |
 |---|---|
 | `GROBID does not answer` | Le serveur n'est pas démarré ou l'adresse est fausse. Rien n'a été envoyé : démarrer GROBID ou passer `--grobid-url`, puis relancer |
-| `The Python package 'pypdf' is missing` | Utiliser le lanceur, ou installer les paquets dans `.venv` (voir plus haut) |
+| `The Python package 'pypdf' is missing` | Lancer le script avec le Python de `.venv`, ou y installer les paquets (voir Installation) |
 | `not sent to GROBID: no usable text layer` | PDF sans texte exploitable : PDF original, ou fichier `.refs.txt` (voir plus haut) |
 | `a bibliography is present but GROBID did not recognise it` | Poster ou article court : fichier `.refs.txt` |
 | `Cannot write ... open in Excel` | Fermer le fichier dans Excel et relancer : rien n'est perdu |
 | Les colonnes `verified` / `decision` se vident après un lancement | Versions antérieures à 3.3.2 : le CSV avait été réenregistré avec des points-virgules (Excel en français). Mettre à jour le script ; enregistrer de préférence en « CSV UTF-8 (délimité par des virgules) » |
 | `column(s) ... not found` | Le CSV a été réenregistré dans un format illisible : l'enregistrer en « CSV UTF-8 » ou le restaurer depuis `output/backups` |
-| `PDF folder not found` | Lancer le script depuis le dossier de travail, utiliser le lanceur, ou passer `--pdf-dir` |
+| `PDF folder not found` | Lancer le script depuis le dossier de travail, ou passer `--pdf-dir` |
 | Un PDF n'est pas détecté | Vérifier qu'il est bien dans `PDF/` avec l'extension `.pdf` |
 
 ## Passation : séance de prise en main
 
 Liste à parcourir ensemble lors de la première utilisation par une nouvelle chercheuse :
 
-- [ ] Décompresser le zip, débloquer les fichiers et lancer le lanceur une première fois
-- [ ] Vérifier que Python est trouvé (version affichée par le lanceur)
+- [ ] Décompresser le zip, créer `.venv` et installer les paquets (voir Installation)
+- [ ] Vérifier la version de Python (`python3 --version`, ou `py --version` sous Windows)
 - [ ] Vérifier l'accès à un serveur GROBID (`--grobid-url` si ce n'est pas `localhost`)
 - [ ] Nommer trois PDF selon la convention et lancer une extraction de test
 - [ ] Lire le bilan de la console et `output/bibliography_README.txt`

@@ -4,6 +4,10 @@ Outil pour l'étape de backward snowballing d'une revue systématique de la litt
 
 Version 3.3.3 (30/09/2026). Auteure : Aurélie Jeunejean. Licence MIT (voir `LICENSE`).
 
+## Principe
+
+![Schéma de principe du script](images/figure%201.jpg)
+
 ## Contenu
 
 | Fichier | Rôle |
@@ -12,6 +16,7 @@ Version 3.3.3 (30/09/2026). Auteure : Aurélie Jeunejean. Licence MIT (voir `LIC
 | `requirements.txt` | Paquets Python nécessaires (pypdf), installés automatiquement par les lanceurs |
 | `LICENSE` | Licence MIT |
 | `README.md` | Ce mode d'emploi |
+| `images/` | Schéma de principe (`figure 1.jpg`) et sa source draw.io (`figures.drawio`) |
 
 ## Ce qu'il faut avant de commencer
 
